@@ -7,6 +7,13 @@ namespace REALtor.Models
 {
     public class House
     {
+        public class Conditions
+        {
+            public bool coldWater;
+            public bool hotWater;
+            public bool electricity;
+            public bool gas;
+        }
         public int id { get; set; }
         public string Name { get; set; }
         public string Address { get; set; }
@@ -18,7 +25,7 @@ namespace REALtor.Models
         //новстройка, хрущевка, застройка...
         public string StatusOfHome { get; set; }
         //условия жизни (вода, газ и тд)
-        //public Conditions Condition { get; set; }
+        public Conditions Condition { get; set; }
         //Площадь
         public double Square { get; set; }
         public string Despription { get; set; }
