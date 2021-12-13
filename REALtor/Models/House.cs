@@ -31,7 +31,7 @@ namespace REALtor.Models
         public string Despription { get; set; }
         public bool Available { get; set; }
 
-        //public Person Seller { get; set; }
+        public Person Seller { get; set; }
 
     }
 }
