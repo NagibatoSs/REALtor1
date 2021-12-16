@@ -24,7 +24,7 @@ namespace REALtor.Data
                         Address = "ул. Карла Маркса д.52, кв.33",
                         Available = true,
                         Square = 96.2,
-                        Img ="",
+                        Img ="/img/house3.jpeg",
                         Seller = new Person{id=1,Fio = { Name="James"} }
 
                     },
@@ -37,18 +37,19 @@ namespace REALtor.Data
                         Address = "ул. Крылова д.5, кв.2",
                         Available = true,
                         Square = 104.2,
-                        Img ="",
+                        Img ="/img/house4.jpeg",
                         Seller = new Person{ id = 2, Fio = { Name = "James2" } }
                     },
                     new House
                     {
-                        Name = "Дом на улице Цветочная",
+                        Name = "Дом на ул. Цветочная",
                         CountOfRooms = 3,
                         Area = "Октябрьский район",
                         Price = 1005000,
                         Address = "ул. Цветочная, д.12",
                         Available = true,
                         Square = 36.5,
+                        Img="/img/house1.jpg",
                         Seller = new Person{ id = 3, Fio = { Name = "James3" } }
                     }
                     ) ;

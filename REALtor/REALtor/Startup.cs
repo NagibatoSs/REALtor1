@@ -22,6 +22,7 @@ namespace REALtor
             _confString = new ConfigurationBuilder().SetBasePath(host.ContentRootPath).AddJsonFile("dbsettings.json").Build();
         }
         public Startup(IConfiguration configuration)
+             
         {
             Configuration = configuration;
         }
@@ -53,6 +54,7 @@ namespace REALtor
                 });
             using (var scope = app.ApplicationServices.CreateScope())
             {
+
                 DbContent content = scope.ServiceProvider.GetRequiredService<DbContent>();
                 DbObjects.Initial(content);
             }

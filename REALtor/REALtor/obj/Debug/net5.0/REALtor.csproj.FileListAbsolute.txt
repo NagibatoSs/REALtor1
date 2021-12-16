@@ -169,8 +169,8 @@ C:\Users\zhura\OneDrive\Рабочий стол\REALtor1\REALtor\REALtor\obj\Deb
 C:\Users\zhura\OneDrive\Рабочий стол\REALtor1\REALtor\REALtor\obj\Debug\net5.0\Razor\Views\dataView.cshtml.g.cs
 C:\Users\zhura\OneDrive\Рабочий стол\REALtor1\REALtor\REALtor\obj\Debug\net5.0\Razor\Views\Houses\ListAllHouses.cshtml.g.cs
 C:\Users\zhura\OneDrive\Рабочий стол\REALtor1\REALtor\REALtor\obj\Debug\net5.0\Razor\Views\searchView.cshtml.g.cs
-C:\Users\zhura\OneDrive\Рабочий стол\REALtor1\REALtor\REALtor\obj\Debug\net5.0\Razor\Views\Shared\mainView.cshtml.g.cs
 C:\Users\zhura\OneDrive\Рабочий стол\REALtor1\REALtor\REALtor\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\zhura\OneDrive\Рабочий стол\REALtor1\REALtor\REALtor\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Users\zhura\OneDrive\Рабочий стол\REALtor1\REALtor\REALtor\obj\Debug\net5.0\REALtor.RazorTargetAssemblyInfo.cs
 C:\Users\zhura\OneDrive\Рабочий стол\REALtor1\REALtor\REALtor\obj\Debug\net5.0\REALtor.Views.pdb
+C:\Users\zhura\OneDrive\Рабочий стол\REALtor1\REALtor\REALtor\obj\Debug\net5.0\Razor\Views\Shared\mainView.cshtml.g.cs
