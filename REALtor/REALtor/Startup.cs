@@ -10,11 +10,17 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using REALtor.Data;
 using REALtor.Data.Interfaces;
+using REALtor.Data.Repository;
 
 namespace REALtor
 {
     public class Startup
     {
+        private IConfigurationRoot _confString;
+        public Startup(IHostingEnvironment host)
+        {
+            _confString = new ConfigurationBuilder().SetBasePath(host.ContentRootPath).AddJsonFile("dbsettings.json").Build();
+        }
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -25,6 +31,8 @@ namespace REALtor
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<DbContent>(options => options.UseSqlServer(_confString.GetConnectionString("DefaultConnection")));
+            services.AddTransient<IAllHouses, HouseRepository>();
             services.AddMvc();
             services.AddRazorPages();
             services.AddMvc(option => option.EnableEndpointRouting = false);
