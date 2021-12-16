@@ -160,3 +160,17 @@ C:\Users\zhura\OneDrive\Рабочий стол\REALtor1\REALtor\REALtor\obj\Deb
 C:\Users\zhura\OneDrive\Рабочий стол\REALtor1\REALtor\REALtor\obj\Debug\net5.0\ref\REALtor.dll
 C:\Users\zhura\OneDrive\Рабочий стол\REALtor1\REALtor\REALtor\obj\Debug\net5.0\REALtor.pdb
 C:\Users\zhura\OneDrive\Рабочий стол\REALtor1\REALtor\REALtor\obj\Debug\net5.0\REALtor.genruntimeconfig.cache
+C:\Users\zhura\OneDrive\Рабочий стол\REALtor1\REALtor\REALtor\obj\Debug\net5.0\REALtor.RazorAssemblyInfo.cache
+C:\Users\zhura\OneDrive\Рабочий стол\REALtor1\REALtor\REALtor\obj\Debug\net5.0\REALtor.RazorAssemblyInfo.cs
+C:\Users\zhura\OneDrive\Рабочий стол\REALtor1\REALtor\REALtor\obj\Debug\net5.0\REALtor.TagHelpers.input.cache
+C:\Users\zhura\OneDrive\Рабочий стол\REALtor1\REALtor\REALtor\obj\Debug\net5.0\REALtor.TagHelpers.output.cache
+C:\Users\zhura\OneDrive\Рабочий стол\REALtor1\REALtor\REALtor\obj\Debug\net5.0\REALtor.RazorCoreGenerate.cache
+C:\Users\zhura\OneDrive\Рабочий стол\REALtor1\REALtor\REALtor\obj\Debug\net5.0\Razor\Views\contactsView.cshtml.g.cs
+C:\Users\zhura\OneDrive\Рабочий стол\REALtor1\REALtor\REALtor\obj\Debug\net5.0\Razor\Views\dataView.cshtml.g.cs
+C:\Users\zhura\OneDrive\Рабочий стол\REALtor1\REALtor\REALtor\obj\Debug\net5.0\Razor\Views\Houses\ListAllHouses.cshtml.g.cs
+C:\Users\zhura\OneDrive\Рабочий стол\REALtor1\REALtor\REALtor\obj\Debug\net5.0\Razor\Views\searchView.cshtml.g.cs
+C:\Users\zhura\OneDrive\Рабочий стол\REALtor1\REALtor\REALtor\obj\Debug\net5.0\Razor\Views\Shared\mainView.cshtml.g.cs
+C:\Users\zhura\OneDrive\Рабочий стол\REALtor1\REALtor\REALtor\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\zhura\OneDrive\Рабочий стол\REALtor1\REALtor\REALtor\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\zhura\OneDrive\Рабочий стол\REALtor1\REALtor\REALtor\obj\Debug\net5.0\REALtor.RazorTargetAssemblyInfo.cs
+C:\Users\zhura\OneDrive\Рабочий стол\REALtor1\REALtor\REALtor\obj\Debug\net5.0\REALtor.Views.pdb

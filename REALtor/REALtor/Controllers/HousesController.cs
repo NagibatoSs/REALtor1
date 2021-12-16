@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using REALtor.Data.Interfaces;
+using REALtor.ViewModels;
 
 namespace REALtor.Controllers
 {
@@ -17,7 +18,9 @@ namespace REALtor.Controllers
         public ViewResult ListAllHouses()
         {
             ViewBag.Title = "Страница с недвижимостью";
-            return View();
+            HousesListViewModel houses = new HousesListViewModel();
+            houses.allHouses = _allHouses.Houses;
+            return View(houses);
         }
     }
 }
