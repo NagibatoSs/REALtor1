@@ -51,6 +51,11 @@ namespace REALtor
                         template: "{controller=Houses}/{action=ListAllHouses}"
                     );
                 });
+            using (var scope = app.ApplicationServices.CreateScope())
+            {
+                DbContent content = scope.ServiceProvider.GetRequiredService<DbContent>();
+                DbObjects.Initial(content);
+            }
         }
     }
 }
