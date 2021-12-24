@@ -1,0 +1,35 @@
+﻿@model Person
+<div>
+    <h3>Ввести данные</h3>
+    <form action="/InputPerson/Checkout" method="post">
+        <div>
+            <label asp-for="Fio"></label>
+            <div>
+                <input asp-for="Fio" class="form-control" />
+                <span asp-validation-for="Fio" class="text-danger"></span>
+            </div>
+        </div>
+        <div>
+            <label asp-for="NumberOfPhone"></label>
+            <div>
+                <input asp-for="NumberOfPhone" class="form-control" />
+                <span asp-validation-for="NumberOfPhone" class="text-danger"></span>
+            </div>
+        </div>
+        <div>
+            <label asp-for="Email"></label>
+            <div>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+        </div>
+        <div>
+            <label asp-for="Requirements"></label>
+            <div>
+                <input asp-for="Requirements" class="form-control" />
+                <span asp-validation-for="Requirements" class="text-danger"></span>
+            </div>
+        </div>
+        <input type="submit" value="Отправить">
+    </form>
+</div>
