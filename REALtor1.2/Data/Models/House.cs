@@ -9,6 +9,7 @@ namespace REALtor1._2.Data.Models
 {
     public class House
     {
+        public string CodeWord { get; set; }
         public bool? coldWater { get; set; }
         public bool? hotWater { get; set; }
         public bool? electricity { get; set; }

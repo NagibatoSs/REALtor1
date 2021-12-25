@@ -33,9 +33,9 @@
     ".NETCoreApp,Version=v5.0": {
       "REALtor1.2/1.0.0": {
         "dependencies": {
-          "EntityFramework": "5.0.0",
+          "EntityFramework": "6.2.0",
           "JSON": "1.0.1",
-          "Microsoft.AspNet.Mvc": "5.0.0",
+          "Microsoft.AspNet.Mvc": "5.2.7",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.13",
           "Microsoft.AspNetCore.StaticFiles": "2.2.0",
           "Microsoft.EntityFrameworkCore": "5.0.13",
@@ -326,14 +326,19 @@
           "REALtor1.2.dll": {}
         }
       },
-      "EntityFramework/5.0.0": {
+      "EntityFramework/6.2.0": {
         "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.2.61023.0"
+          },
           "lib/net45/EntityFramework.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.20627.0"
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.2.61023.0"
           }
         },
         "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
           "lib/net45/EntityFramework.dll": {}
         }
       },
@@ -356,53 +361,53 @@
           "lib/net40/Json.dll": {}
         }
       },
-      "Microsoft.AspNet.Mvc/5.0.0": {
+      "Microsoft.AspNet.Mvc/5.2.7": {
         "dependencies": {
-          "Microsoft.AspNet.Razor": "3.0.0",
-          "Microsoft.AspNet.WebPages": "3.0.0"
+          "Microsoft.AspNet.Razor": "3.2.7",
+          "Microsoft.AspNet.WebPages": "3.2.7"
         },
         "runtime": {
           "lib/net45/System.Web.Mvc.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.11001.0"
+            "assemblyVersion": "5.2.7.0",
+            "fileVersion": "5.2.61128.0"
           }
         },
         "compile": {
           "lib/net45/System.Web.Mvc.dll": {}
         }
       },
-      "Microsoft.AspNet.Razor/3.0.0": {
+      "Microsoft.AspNet.Razor/3.2.7": {
         "runtime": {
           "lib/net45/System.Web.Razor.dll": {
             "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.11001.0"
+            "fileVersion": "3.0.61128.0"
           }
         },
         "compile": {
           "lib/net45/System.Web.Razor.dll": {}
         }
       },
-      "Microsoft.AspNet.WebPages/3.0.0": {
+      "Microsoft.AspNet.WebPages/3.2.7": {
         "dependencies": {
-          "Microsoft.AspNet.Razor": "3.0.0",
+          "Microsoft.AspNet.Razor": "3.2.7",
           "Microsoft.Web.Infrastructure": "1.0.0"
         },
         "runtime": {
           "lib/net45/System.Web.Helpers.dll": {
             "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.11001.0"
+            "fileVersion": "3.0.61128.0"
           },
           "lib/net45/System.Web.WebPages.Deployment.dll": {
             "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.11001.0"
+            "fileVersion": "3.0.61128.0"
           },
           "lib/net45/System.Web.WebPages.Razor.dll": {
             "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.11001.0"
+            "fileVersion": "3.0.61128.0"
           },
           "lib/net45/System.Web.WebPages.dll": {
             "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.11001.0"
+            "fileVersion": "3.0.61128.0"
           }
         },
         "compile": {
@@ -3222,12 +3227,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "EntityFramework/5.0.0": {
+    "EntityFramework/6.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-WYfgJWKg/RjwU8pzZkImD9DsV+J1nqDcIGp1S0/bdnElKBmAaUC2nmq/QQAcco32KyQQWnLgJNiDzIOz2xWFbQ==",
-      "path": "entityframework/5.0.0",
-      "hashPath": "entityframework.5.0.0.nupkg.sha512"
+      "sha512": "sha512-ptGyXOf26qLrtn+2doAmylIlCxOnBJANwlyyLrXDmqIk9O18IzLWHyxDwwAyhgXkxmbiaA0WNpRy67WRReInBw==",
+      "path": "entityframework/6.2.0",
+      "hashPath": "entityframework.6.2.0.nupkg.sha512"
     },
     "Humanizer.Core/2.8.26": {
       "type": "package",
@@ -3243,26 +3248,26 @@
       "path": "json/1.0.1",
       "hashPath": "json.1.0.1.nupkg.sha512"
     },
-    "Microsoft.AspNet.Mvc/5.0.0": {
+    "Microsoft.AspNet.Mvc/5.2.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Dj4C1Nwa1PyxhGtjQx9p6WNTBdvN46gJZMcjQAjxB+2Lmcr+ixior9FGHf9PjH6UUxR9vCZVz16zMlofFdwbPQ==",
-      "path": "microsoft.aspnet.mvc/5.0.0",
-      "hashPath": "microsoft.aspnet.mvc.5.0.0.nupkg.sha512"
+      "sha512": "sha512-m3hUsn48k6Qb5El9A8naTwGTLCdSQKGSpGweqIfiVKltGJzAJJxuXvhhaQQtLCGg3i5V88iGjz0JG72/tlFKlg==",
+      "path": "microsoft.aspnet.mvc/5.2.7",
+      "hashPath": "microsoft.aspnet.mvc.5.2.7.nupkg.sha512"
     },
-    "Microsoft.AspNet.Razor/3.0.0": {
+    "Microsoft.AspNet.Razor/3.2.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-mU1W0PRd1uQAb+triRGp51YYkw26RQ9q1tWPX57eHqxDqjx1smRHhejQhhnoAGr3bZDkl8AoUxegGR3tNM+YKA==",
-      "path": "microsoft.aspnet.razor/3.0.0",
-      "hashPath": "microsoft.aspnet.razor.3.0.0.nupkg.sha512"
+      "sha512": "sha512-BpWEZ+Ys7g9VAkbAfpG5jr5A1fKcmadCCXv3fYfps5YfTVABJIGV4uc9yvmXKxsNsjL+BzDld2gs+xtgT2gg1g==",
+      "path": "microsoft.aspnet.razor/3.2.7",
+      "hashPath": "microsoft.aspnet.razor.3.2.7.nupkg.sha512"
     },
-    "Microsoft.AspNet.WebPages/3.0.0": {
+    "Microsoft.AspNet.WebPages/3.2.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-wkz/rBJlALE/tVfhVFpadcaBK0oLGOb8AbuyWQ5qr84JPHtqWjsJUe3Lfyzu2ZixdYrQ9NuKMNlKIshaJUsCFA==",
-      "path": "microsoft.aspnet.webpages/3.0.0",
-      "hashPath": "microsoft.aspnet.webpages.3.0.0.nupkg.sha512"
+      "sha512": "sha512-2jwZFB7PvY+tbdz0ZP4iEo7gMrJxkCQUzoGLh6swUc6ZXl6DoKyDslmGcC/j9PFmJXCRMVIqtRorlPSMU2DuRA==",
+      "path": "microsoft.aspnet.webpages/3.2.7",
+      "hashPath": "microsoft.aspnet.webpages.3.2.7.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Cryptography.Internal/5.0.13": {
       "type": "package",

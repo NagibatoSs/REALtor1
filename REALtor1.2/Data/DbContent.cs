@@ -9,7 +9,7 @@ using REALtor1._2.Data.Models;
 
 namespace REALtor1._2.Data
 {
-    public class DbContent : IdentityDbContext<IdentityUser>
+    public class DbContent:IdentityDbContext<IdentityUser>
     {
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -34,10 +34,10 @@ namespace REALtor1._2.Data
             builder.Entity<IdentityUserRole<string>>().HasData(new IdentityUserRole<string>
             {
                 RoleId = "f9e70088-f003-4dd2-ae7f-b6fd6b8239d5",
-                UserId = "586347a0-0208-44e2-b3cc-86138a23a89e"
+                UserId= "586347a0-0208-44e2-b3cc-86138a23a89e"
             });
         }
-        public DbContent(DbContextOptions<DbContent> options) : base(options)
+        public DbContent(DbContextOptions<DbContent> options):base(options)
         {
 
         }

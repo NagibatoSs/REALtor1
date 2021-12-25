@@ -37,5 +37,6 @@ namespace REALtor1._2.Data.Repository
                 dbContent.Entry(entity).State = EntityState.Modified;
             dbContent.SaveChanges();
         }
+       
     }
 }

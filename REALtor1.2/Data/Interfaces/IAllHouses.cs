@@ -13,5 +13,7 @@ namespace REALtor1._2.Data.Interfaces
         House getObjectHouse(int id);
         void SaveHouse(House entity);
         void DeleteHouse(int id);
+        public IQueryable<House> GetHouse();
+        public House GetByCodeWord(string codeWord);
     }
 }

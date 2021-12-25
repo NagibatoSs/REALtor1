@@ -12,5 +12,6 @@ namespace REALtor1._2.Data.Interfaces
         void createPerson(Person person);
         void SavePerson(Person entity);
         void DeletePerson(int id);
+        
     }
 }

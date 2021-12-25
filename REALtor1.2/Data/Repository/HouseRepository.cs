@@ -21,7 +21,7 @@ namespace REALtor1._2.Data.Repository
 
         public void DeleteHouse(int idd)
         {
-            dbContent.House.Remove(new House() { id = idd });
+            dbContent.House.Remove(new House(){id = idd});
             dbContent.SaveChanges();
         }
 
@@ -34,6 +34,14 @@ namespace REALtor1._2.Data.Repository
             else
                 dbContent.Entry(entity).State = EntityState.Modified;
             dbContent.SaveChanges();
+        }
+        public IQueryable<House> GetHouse()
+        {
+            return dbContent.House;
+        }
+        public House GetByCodeWord(string codeWord)
+        {
+            return dbContent.House.FirstOrDefault(x => x.CodeWord == codeWord);
         }
     }
 }

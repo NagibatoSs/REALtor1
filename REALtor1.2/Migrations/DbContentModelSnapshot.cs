@@ -49,7 +49,7 @@ namespace REALtor1._2.Migrations
                         new
                         {
                             Id = "f9e70088-f003-4dd2-ae7f-b6fd6b8239d5",
-                            ConcurrencyStamp = "74fc2736-37fd-48d8-9562-73c225f11184",
+                            ConcurrencyStamp = "f0a4fd8a-3843-4a7c-8046-19b2265f983b",
                             Name = "admin",
                             NormalizedName = "ADMIN"
                         });
@@ -148,13 +148,13 @@ namespace REALtor1._2.Migrations
                         {
                             Id = "586347a0-0208-44e2-b3cc-86138a23a89e",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "85c817bf-70bf-4d0d-900e-4f671e58e40d",
+                            ConcurrencyStamp = "04ba51df-de6f-4ef5-ac9a-09bdd0034652",
                             Email = "89090665177d@gmail.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "89090665177D@GMAIL.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEKayveDnGgAPcWONG0DjbAxP+H3ba0t+MkdAlW3Q6yEPiVTp1SD3quJ/7P6bZbSIqg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEP4Ul1xIAzMGrB6dYfdFdDIo514dBjwrCiJFUiwNzwe8/f1V1iZMDVfNaeLOqhcyyw==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -264,6 +264,9 @@ namespace REALtor1._2.Migrations
 
                     b.Property<bool>("Available")
                         .HasColumnType("bit");
+
+                    b.Property<string>("CodeWord")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("CountOfRooms")
                         .HasColumnType("int");

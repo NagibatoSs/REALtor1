@@ -10,8 +10,8 @@ using REALtor1._2.Data;
 namespace REALtor1._2.Migrations
 {
     [DbContext(typeof(DbContent))]
-    [Migration("20211225153837_initial2")]
-    partial class initial2
+    [Migration("20211224160152_Initial2")]
+    partial class Initial2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -51,7 +51,7 @@ namespace REALtor1._2.Migrations
                         new
                         {
                             Id = "f9e70088-f003-4dd2-ae7f-b6fd6b8239d5",
-                            ConcurrencyStamp = "74fc2736-37fd-48d8-9562-73c225f11184",
+                            ConcurrencyStamp = "11f8d1ad-91a8-4fdc-bc70-d3e24be51fcc",
                             Name = "admin",
                             NormalizedName = "ADMIN"
                         });
@@ -150,13 +150,13 @@ namespace REALtor1._2.Migrations
                         {
                             Id = "586347a0-0208-44e2-b3cc-86138a23a89e",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "85c817bf-70bf-4d0d-900e-4f671e58e40d",
+                            ConcurrencyStamp = "c33739c7-6920-4b11-a531-f2a77bb17c15",
                             Email = "89090665177d@gmail.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "89090665177D@GMAIL.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEKayveDnGgAPcWONG0DjbAxP+H3ba0t+MkdAlW3Q6yEPiVTp1SD3quJ/7P6bZbSIqg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEIdjcMirelLk1l4Tf9NMlkOoJr7b2pRLk5Qysc3mOzyIYp4OyNA/qdZgliXXLm7JZw==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,

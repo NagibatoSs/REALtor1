@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace REALtor1._2.Migrations
 {
-    public partial class initial : Migration
+    public partial class Initial2 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -44,23 +44,6 @@ namespace REALtor1._2.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Person",
-                columns: table => new
-                {
-                    id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Fio = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    NumberOfPhone = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Requirements = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Status = table.Column<string>(type: "nvarchar(max)", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Person", x => x.id);
                 });
 
             migrationBuilder.CreateTable(
@@ -169,48 +152,15 @@ namespace REALtor1._2.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.CreateTable(
-                name: "House",
-                columns: table => new
-                {
-                    id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    coldWater = table.Column<bool>(type: "bit", nullable: true),
-                    hotWater = table.Column<bool>(type: "bit", nullable: true),
-                    electricity = table.Column<bool>(type: "bit", nullable: true),
-                    gas = table.Column<bool>(type: "bit", nullable: true),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Address = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CountOfRooms = table.Column<int>(type: "int", nullable: true),
-                    Img = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Price = table.Column<decimal>(type: "decimal(20,0)", nullable: true),
-                    Area = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    StatusOfHome = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Square = table.Column<double>(type: "float", nullable: true),
-                    Despription = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Available = table.Column<bool>(type: "bit", nullable: false),
-                    Sellerid = table.Column<int>(type: "int", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_House", x => x.id);
-                    table.ForeignKey(
-                        name: "FK_House_Person_Sellerid",
-                        column: x => x.Sellerid,
-                        principalTable: "Person",
-                        principalColumn: "id",
-                        onDelete: ReferentialAction.Restrict);
-                });
-
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
-                values: new object[] { "f9e70088-f003-4dd2-ae7f-b6fd6b8239d5", "28426467-44c5-4216-bbbf-733c5abfcd05", "admin", "ADMIN" });
+                values: new object[] { "f9e70088-f003-4dd2-ae7f-b6fd6b8239d5", "11f8d1ad-91a8-4fdc-bc70-d3e24be51fcc", "admin", "ADMIN" });
 
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "586347a0-0208-44e2-b3cc-86138a23a89e", 0, "390d0f55-fa52-4d2e-a7e4-d992654f8abf", "89090665177d@gmail.com", true, false, null, "89090665177D@GMAIL.COM", "ADMIN", "AQAAAAEAACcQAAAAECZZp095WRggiwpeFFwv0zUxqcS7vS526Z01pNqQJX7VGhw1nSTGAMheuEyPi97t7g==", null, false, "", false, "admin" });
+                values: new object[] { "586347a0-0208-44e2-b3cc-86138a23a89e", 0, "c33739c7-6920-4b11-a531-f2a77bb17c15", "89090665177d@gmail.com", true, false, null, "89090665177D@GMAIL.COM", "ADMIN", "AQAAAAEAACcQAAAAEIdjcMirelLk1l4Tf9NMlkOoJr7b2pRLk5Qysc3mOzyIYp4OyNA/qdZgliXXLm7JZw==", null, false, "", false, "admin" });
 
             migrationBuilder.InsertData(
                 table: "AspNetUserRoles",
@@ -255,11 +205,6 @@ namespace REALtor1._2.Migrations
                 column: "NormalizedUserName",
                 unique: true,
                 filter: "[NormalizedUserName] IS NOT NULL");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_House_Sellerid",
-                table: "House",
-                column: "Sellerid");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -280,16 +225,10 @@ namespace REALtor1._2.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "House");
-
-            migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
-
-            migrationBuilder.DropTable(
-                name: "Person");
         }
     }
 }
