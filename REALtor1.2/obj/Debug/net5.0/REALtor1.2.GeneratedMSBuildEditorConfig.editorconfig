@@ -6,3 +6,5 @@ build_property.ProjectTypeGuids =
 build_property.PublishSingleFile = 
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
+build_property.RootNamespace = REALtor1._2
+build_property.ProjectDir = C:\Users\DNS\OneDrive\Рабочий стол\ПИ_REALtor\REALtor1\REALtor1.2\

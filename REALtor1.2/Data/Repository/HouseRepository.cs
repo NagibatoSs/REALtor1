@@ -19,6 +19,21 @@ namespace REALtor1._2.Data.Repository
 
         public IEnumerable<House> GetAvailableHouses => dbContent.House.Where(h => h.Available).Include(p => p.Seller);
 
+        public void DeleteHouse(int idd)
+        {
+            dbContent.House.Remove(new House() { id = idd });
+            dbContent.SaveChanges();
+        }
+
         public House getObjectHouse(int houseId) => dbContent.House.FirstOrDefault(n => n.id == houseId);
+
+        public void SaveHouse(House entity)
+        {
+            if (entity.id == default)
+                dbContent.Entry(entity).State = EntityState.Added;
+            else
+                dbContent.Entry(entity).State = EntityState.Modified;
+            dbContent.SaveChanges();
+        }
     }
 }

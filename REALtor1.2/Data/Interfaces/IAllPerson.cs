@@ -10,5 +10,7 @@ namespace REALtor1._2.Data.Interfaces
     {
         IEnumerable<Person> AllPeople { get; }
         void createPerson(Person person);
+        void SavePerson(Person entity);
+        void DeletePerson(int id);
     }
 }

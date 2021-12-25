@@ -11,5 +11,7 @@ namespace REALtor1._2.Data.Interfaces
         IEnumerable<House> Houses { get; }
         IEnumerable<House> GetAvailableHouses { get; }
         House getObjectHouse(int id);
+        void SaveHouse(House entity);
+        void DeleteHouse(int id);
     }
 }

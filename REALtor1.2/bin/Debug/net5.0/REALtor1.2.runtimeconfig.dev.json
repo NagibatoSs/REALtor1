@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\zhura\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\zhura\\.nuget\\packages"
+      "C:\\Users\\DNS\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\DNS\\.nuget\\packages"
     ]
   }
 }
