@@ -1,11 +1,6 @@
 ﻿@model IQueryable<House>
-@{
-    string strTitle = "Панель администратора";
-    ViewBag.Title = strTitle;
-}
-
 <div>
-    <h2>@strTitle</h2>
+    <h2>"Панель администратора"</h2>
     <div>
         <h3>Наши услуги</h3>
         <div class="div-box">
@@ -17,11 +12,11 @@
                 @foreach (var house in Model)
                 {
                     <div>
-                        <a asp-area="Admin" asp-controller="House" asp-action="Edit" asp-route-id="@house.id">редактировать</a>
+                        <a asp-area="Admin" asp-controller="House" asp-action="Edit" asp-route-id="@house.id">Редактировать</a>
                         |
                         <form style="display: inline-block;" id="form-@house.id" asp-area="Admin" asp-controller="House" asp-action="Delete" method="post">
                             <input type="hidden" name="id" value="@house.id">
-                            <a href="#" onclick="document.getElementById('form-@house.id').submit();">удалить</a>
+                            <a href="#" onclick="document.getElementById('form-@house.id').submit();">Удалить</a>
                         </form>
                         |
                         <a asp-area="" asp-controller="Services" asp-action="Index" asp-route-id="@house.id">

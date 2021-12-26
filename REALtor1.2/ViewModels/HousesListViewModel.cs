@@ -9,6 +9,5 @@ namespace REALtor1._2.ViewModels
     public class HousesListViewModel
     {
         public IEnumerable<House> getAllHouses { get; set; }
-        public string currPerson { get; set; }
     }
 }

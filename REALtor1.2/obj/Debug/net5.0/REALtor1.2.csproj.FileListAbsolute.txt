@@ -507,3 +507,6 @@ C:\Users\zhura\OneDrive\Рабочий стол\гит последнедний\
 C:\Users\zhura\OneDrive\Рабочий стол\гит последнедний\REALtor1\REALtor1.2\obj\Debug\net5.0\REALtor1.2.pdb
 C:\Users\zhura\OneDrive\Рабочий стол\гит последнедний\REALtor1\REALtor1.2\obj\Debug\net5.0\REALtor1.2.genruntimeconfig.cache
 C:\Users\zhura\OneDrive\Рабочий стол\гит последнедний\REALtor1\REALtor1.2\obj\Debug\net5.0\Razor\Areas\Admin\Views\House\Edit.cshtml.g.cs
+C:\Users\zhura\OneDrive\Рабочий стол\гит последнедний\REALtor1\REALtor1.2\obj\Debug\net5.0\Razor\Views\InputHouse\Checkout.cshtml.g.cs
+C:\Users\zhura\OneDrive\Рабочий стол\гит последнедний\REALtor1\REALtor1.2\obj\Debug\net5.0\Razor\Views\InputHouse\Complete.cshtml.g.cs
+C:\Users\zhura\OneDrive\Рабочий стол\гит последнедний\REALtor1\REALtor1.2\obj\Debug\net5.0\Razor\Areas\Admin\Views\House\ListHouses.cshtml.g.cs

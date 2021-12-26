@@ -22,7 +22,6 @@ namespace REALtor1._2.Controllers
             ViewBag.Title = "Поиск";
             HousesListViewModel houses = new HousesListViewModel();
             houses.getAllHouses = _allHouses.Houses;
-            houses.currPerson = "Владелец";
             return View(houses);
         }
         public ViewResult MainView()

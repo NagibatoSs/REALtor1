@@ -9,7 +9,8 @@ using Microsoft.Extensions.Hosting.Internal;
 using REALtor1._2.Data;
 using REALtor1._2.Data.Models;
 using Microsoft.AspNetCore.Hosting;
-
+using REALtor1._2.Data.Interfaces;
+using REALtor1._2.ViewModels;
 
 namespace REALtor1._2.Areas.Admin.Controllers
 {
@@ -18,13 +19,23 @@ namespace REALtor1._2.Areas.Admin.Controllers
     public class HouseController : Controller
     {
         private readonly DataManager dataManager;
-        private readonly IWebHostEnvironment hostingEnvironment;
-        public HouseController(DataManager dataManager, IWebHostEnvironment hostingEnvironment)
+        public HouseController(DataManager dataManager)
         {
             this.dataManager = dataManager;
-            this.hostingEnvironment = hostingEnvironment;
-        }
 
+        }
+        public ViewResult ListHouses()
+        {
+            ViewBag.Title = "Поиск";
+            HousesListViewModel houses = new HousesListViewModel();
+            houses.getAllHouses = dataManager.Houses.Houses;
+            return View(houses);
+        }
+        public ViewResult MainView()
+        {
+            ViewBag.Title = "Главная страница";
+            return View();
+        }
         public IActionResult Edit(int id)
         {
             var entity = id == default ? new House() : dataManager.Houses.getObjectHouse(id);
@@ -35,14 +46,6 @@ namespace REALtor1._2.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                //if (imgFile != null)
-                //{
-                //    model.Img = imgFile.FileName;
-                //    using (var stream = new FileStream(Path.Combine(hostingEnvironment.WebRootPath, "img/", imgFile.FileName), FileMode.Create))
-                //    {
-                //        imgFile.CopyTo(stream);
-                //    }
-                //}
                 dataManager.Houses.SaveHouse(model);
                 return RedirectToAction(nameof(HomeController.Index), nameof(HomeController).Replace("Controller",""));
             }

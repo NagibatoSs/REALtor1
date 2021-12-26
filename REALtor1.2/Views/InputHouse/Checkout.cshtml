@@ -1,0 +1,35 @@
+﻿@model House
+<div>
+    <h3>Разместить недвижимость</h3>
+    <form action="/InputHouse/Checkout" method="post">
+        <div>
+            <label asp-for="Name"></label>
+            <div>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+        </div>
+        <div>
+            <label asp-for="Address"></label>
+            <div>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+        </div>
+        <div>
+            <label asp-for="Despription"></label>
+            <div>
+                <input asp-for="Despription" class="form-control" />
+                <span asp-validation-for="Despription" class="text-danger"></span>
+            </div>
+        </div>
+        <div>
+            <label asp-for="Area"></label>
+            <div>
+                <input asp-for="Area" class="form-control" />
+                <span asp-validation-for="Area" class="text-danger"></span>
+            </div>
+        </div>
+        <input type="submit" value="Отправить">
+    </form>
+</div>
