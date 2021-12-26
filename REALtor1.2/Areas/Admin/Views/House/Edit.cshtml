@@ -10,6 +10,7 @@
     <div>
         <form asp-area="Admin" asp-controller="House" asp-action="Edit" method="post" enctype="multipart/form-data">
             <input type="hidden" asp-for="id" />
+            <input type="hidden" asp-for="Available" value="true"/>
 
             <div asp-validation-summary="All"></div>
             <div class="div-box">

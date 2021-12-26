@@ -1,52 +1,14 @@
-﻿@*@model House
-<button href="#" class="open-popup">Параметры</button>
-<div class="popup-bg">
-    <div class="popup">
-        <button class="close-popup">X</button>
-        <h1 id="paramsHeading">Параметры</h1>
-        <form action="/Houses/Parameters">
-            <p class="paramsText">Площадь недвижимости:</p>
-            <p class="paramsText">от<input asp-for="Square" type="number" required autofocus>до<input asp-for="Square" type="number" required></p>
-            <p class="paramsText">Количество комнат:</p>
-            <p class="paramsText">
-                студия<input asp-action="CountOfRooms=true" name="rooms" type="radio">
-                1<input asp-action="CountOfRooms=true" name="rooms" type="radio">
-                2<input asp-action="CountOfRooms=true" name="rooms" type="radio">
-                3<input asp-action="CountOfRooms=true" name="rooms" type="radio">
-                4<input asp-action="CountOfRooms=true" name="rooms" type="radio">
-                >4<input asp-action="CountOfRooms=true" name="rooms" type="radio">
-            </p>
-            <br>
-            <p class="paramsText">Цена:</p>
-            <p class="paramsText">от<input asp-for="Price" type="number" step="1000" required>до<input asp-for="Price" type="number" step="1000" required>рублей</p>
-            <p class="paramsText">Район:</p>
-            <p class="paramsText">Индустриальный<input asp-action="Area=Индустриальный" name="area" type="radio">Ленинский<input asp-action="Area=Ленинский" name="area" type="radio">Октябрьский<input asp-action="Area=Октябрьский" name="area" type="radio"></p>
-            <p class="paramsText">Устиновский<input asp-action="Area=Устиновский" name="area" type="radio">Первомайский<input asp-action="Area=Первомайский" name="area" type="radio"></p>
-            <p class="paramsText">Вид недвижимости:</p>
-            <p class="paramsText">Гараж<input asp-action="StatusOfHome=Гараж" name="property" type="radio">Новостройка<input asp-action="StatusOfHome=Новостройка" name="property" type="radio">Старый ветхий дом<input asp-action="StatusOfHome=Старый ветхий дом" name="property" type="radio"></p>
-            <p class="paramsText">Частный дом<input asp-action="StatusOfHome=Частный дом" name="property" type="radio">Старый многоэтажный дом<input asp-action="StatusOfHome=Старый многоэтажный дом" name="property" type="radio"></p>
-            <p class="paramsText">Условия жизни:</p>
-            <p class="paramsText">Холодная вода<input asp-action="coldWater=true" type="radio">Горячая вода<input asp-action="hotWater=true" type="radio">Электричество<input asp-action="electricity=true" type="radio"></p>
-            <p class="paramsText">Газ<input asp-action="gas=true" type="radio"></p>
-            <p class="textByForm">ФИО: <input asp-for="Seller.Fio" type="text" size="40" required></p>
-            <p class="textByForm">Номер телефона: <input asp-for="Seller.NumberOfPhone" type="tel" size="40" required></p>
-            <p class="textByForm">Электронная почта: <input asp-for="Seller.Email" type="email" size="40" required></p>
-            <p class="textByForm">Адрес недвижимости: <input asp-for="Address" type="text" size="60" required></p>
-            <p class="textByForm">Фото: <input asp-for="Img" type="text" required></p>
-            <input type="submit" value="ГОТОВО">
-        </form>
-    </div>
-</div>
-<script src="jquery.min.js"></script>
-<script src="script.js"></script>*@
+﻿
 
 @{
+<button href="/Houses/Parametrs" class="open-popup">Параметры</button>
     foreach (var house in Model.getAllHouses)
     {
         <div>
             <h3>@house.Name</h3>
             <p>@house.Price рублей </p>
-            <p> Площадь:@house.Square Район:@house.Area Адресс:@house.Address</p>
+            <p> Площадь:@house.Square </p>
+            <p> Район:@house.Area Адресс:@house.Address</p>
             <p>@house.Despription</p>
             <img src="@house.Img" alt="@house.Name">
         </div>

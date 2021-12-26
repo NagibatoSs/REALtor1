@@ -85,7 +85,7 @@ namespace REALtor1._2
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute("admin", "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapControllerRoute("admin", "{area:exists}/{controller=House}/{action=MainView}/{id?}");
                 endpoints.MapControllerRoute("default", "{controller=Houses}/{action=MainView}/{id?}");
             });
 

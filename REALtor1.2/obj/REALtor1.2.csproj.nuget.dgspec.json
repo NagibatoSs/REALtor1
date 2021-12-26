@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ккккк\\OneDrive\\Рабочий стол\\REALtor1\\REALtor1.2\\REALtor1.2.csproj": {}
+    "C:\\Users\\zhura\\OneDrive\\Рабочий стол\\гит с оформлением базовой админкой 26.12.01\\REALtor1\\REALtor1.2\\REALtor1.2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ккккк\\OneDrive\\Рабочий стол\\REALtor1\\REALtor1.2\\REALtor1.2.csproj": {
+    "C:\\Users\\zhura\\OneDrive\\Рабочий стол\\гит с оформлением базовой админкой 26.12.01\\REALtor1\\REALtor1.2\\REALtor1.2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ккккк\\OneDrive\\Рабочий стол\\REALtor1\\REALtor1.2\\REALtor1.2.csproj",
+        "projectUniqueName": "C:\\Users\\zhura\\OneDrive\\Рабочий стол\\гит с оформлением базовой админкой 26.12.01\\REALtor1\\REALtor1.2\\REALtor1.2.csproj",
         "projectName": "REALtor1.2",
-        "projectPath": "C:\\Users\\ккккк\\OneDrive\\Рабочий стол\\REALtor1\\REALtor1.2\\REALtor1.2.csproj",
-        "packagesPath": "C:\\Users\\ккккк\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ккккк\\OneDrive\\Рабочий стол\\REALtor1\\REALtor1.2\\obj\\",
+        "projectPath": "C:\\Users\\zhura\\OneDrive\\Рабочий стол\\гит с оформлением базовой админкой 26.12.01\\REALtor1\\REALtor1.2\\REALtor1.2.csproj",
+        "packagesPath": "C:\\Users\\zhura\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zhura\\OneDrive\\Рабочий стол\\гит с оформлением базовой админкой 26.12.01\\REALtor1\\REALtor1.2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ккккк\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\zhura\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -93,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

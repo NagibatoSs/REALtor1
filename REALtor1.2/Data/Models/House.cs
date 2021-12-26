@@ -11,10 +11,10 @@ namespace REALtor1._2.Data.Models
     {
         public int? id { get; set; }
         public string CodeWord { get; set; }
-        public bool? coldWater { get; set; }
-        public bool? hotWater { get; set; }
-        public bool? electricity { get; set; }
-        public bool? gas { get; set; }
+        public bool coldWater { get; set; }
+        public bool hotWater { get; set; }
+        public bool electricity { get; set; }
+        public bool gas { get; set; }
         public string Name { get; set; }
         public string Address { get; set; }
         public int? CountOfRooms { get; set; }

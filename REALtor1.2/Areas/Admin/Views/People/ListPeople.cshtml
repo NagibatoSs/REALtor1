@@ -1,0 +1,12 @@
+﻿@{
+    foreach (var person in Model.getAllPeople)
+    {
+        <div>
+            <h3>@person.Fio</h3>
+            <p>@person.NumberOfPhone </p>
+            <p> email:@person.Email </p>
+            <p> Статус:@person.Status </p>
+            <p>@person.Requirements</p>
+        </div>
+    }
+}
