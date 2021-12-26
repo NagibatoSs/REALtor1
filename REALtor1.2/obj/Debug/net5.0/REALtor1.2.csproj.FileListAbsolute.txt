@@ -707,3 +707,6 @@ C:\Users\zhura\OneDrive\Рабочий стол\гит с оформлением
 C:\Users\zhura\OneDrive\Рабочий стол\гит с оформлением базовой админкой 26.12.01\REALtor1\REALtor1.2\obj\Debug\net5.0\REALtor1.2.genruntimeconfig.cache
 C:\Users\zhura\OneDrive\Рабочий стол\гит с оформлением базовой админкой 26.12.01\REALtor1\REALtor1.2\obj\Debug\net5.0\Razor\Areas\Admin\Views\People\ListPeople.cshtml.g.cs
 C:\Users\zhura\OneDrive\Рабочий стол\гит с оформлением базовой админкой 26.12.01\REALtor1\REALtor1.2\obj\Debug\net5.0\Razor\Areas\Admin\Views\House\MainView.cshtml.g.cs
+C:\Users\ккккк\OneDrive\Рабочий стол\REALtor1\REALtor1.2\obj\Debug\net5.0\Razor\Areas\Admin\Views\House\MainView.cshtml.g.cs
+C:\Users\ккккк\OneDrive\Рабочий стол\REALtor1\REALtor1.2\obj\Debug\net5.0\Razor\Areas\Admin\Views\People\ListPeople.cshtml.g.cs
+C:\Users\ккккк\OneDrive\Рабочий стол\REALtor1\REALtor1.2\obj\Debug\net5.0\Razor\Views\Houses\Parametrs.cshtml.g.cs

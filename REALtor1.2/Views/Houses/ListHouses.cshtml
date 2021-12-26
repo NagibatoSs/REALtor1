@@ -4,13 +4,14 @@
 <button href="/Houses/Parametrs" class="open-popup">Параметры</button>
     foreach (var house in Model.getAllHouses)
     {
-        <div>
-            <h3>@house.Name</h3>
-            <p>@house.Price рублей </p>
-            <p> Площадь:@house.Square </p>
-            <p> Район:@house.Area Адресс:@house.Address</p>
-            <p>@house.Despription</p>
-            <img src="@house.Img" alt="@house.Name">
-        </div>
+<div class="list">
+    <img src="@house.Img" alt="@house.Name">
+    <h3>@house.Name</h3>
+    <p>@house.Price рублей </p>
+    <p> Площадь:@house.Square </p>
+    <p> Район:@house.Area Адрес:@house.Address</p>
+    <p>@house.Despription</p>
+
+</div>
     }
 }

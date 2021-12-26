@@ -1,17 +1,17 @@
 ﻿@model IQueryable<House>
 <div>
     <h2>"Панель администратора"</h2>
-    <div>
+    <div class="mainPanel">
         <h3>Наши услуги</h3>
-        <div class="div-box">
-            <a asp-area="Admin" asp-controller="House" asp-action="Edit" asp-route-id="">Добавить недвижимость</a>
-        </div>
+        <a asp-area="Admin" asp-controller="House" asp-action="Edit" asp-route-id="">Добавить недвижимость</a>
+    </div>
+    <div>
         @if (Model.Any())
         {
             <div>
                 @foreach (var house in Model)
                 {
-                    <div>
+                    <div class="panel">
                         <a asp-area="Admin" asp-controller="House" asp-action="Edit" asp-route-id="@house.id">Редактировать</a>
                         |
                         <form style="display: inline-block;" id="form-@house.id" asp-area="Admin" asp-controller="House" asp-action="Delete" method="post">

@@ -10,18 +10,38 @@
     <div>
         <form asp-area="Admin" asp-controller="House" asp-action="Edit" method="post" enctype="multipart/form-data">
             <input type="hidden" asp-for="id" />
-            <input type="hidden" asp-for="Available" value="true"/>
+            <input type="hidden" asp-for="Available" value="true" />
 
             <div asp-validation-summary="All"></div>
-            <div class="div-box">
-                <label asp-for="Name"></label>
-                <input asp-for="Name" />
+            <div class="box">
+                <label asp-for="Name">Имя дома:</label>
+                <input asp-for="Name" size="60"/>
                 <span asp-validation-for="Name"></span>
             </div>
-            <div class="div-box">
-                <label asp-for="Img"></label>
-                <input asp-for="Img" />
+            <div class="box">
+                <label asp-for="Img">Фото дома:</label>
+                <input asp-for="Img" size="60"/>
                 <span asp-validation-for="Img"></span>
+            </div>
+            <div class="box">
+                <label asp-for="Price">Цена:</label>
+                <input asp-for="Price" size="70"/>
+                <span asp-validation-for="Price"></span>
+            </div>
+            <div class="box">
+                <label asp-for="Square">Площадь:</label>
+                <input asp-for="Square" size="60"/>
+                <span asp-validation-for="Square"></span>
+            </div>
+            <div class="box">
+                <label asp-for="Area">Район:</label>
+                <input asp-for="Area" size="60"/>
+                <span asp-validation-for="Area"></span>
+            </div>
+            <div class="box">
+                <label asp-for="Despription">Описание:</label>
+                <input asp-for="Despription" size="100"/>
+                <span asp-validation-for="Despription"></span>
             </div>
             <input type="submit" value="Сохранить" />
         </form>

@@ -1,12 +1,12 @@
 ﻿@{
     foreach (var person in Model.getAllPeople)
     {
-        <div>
-            <h3>@person.Fio</h3>
-            <p>@person.NumberOfPhone </p>
+        <div class="contactsByAdmin">
+            <h3> ФИО:@person.Fio</h3>
+            <p> Номер телефона:@person.NumberOfPhone </p>
             <p> email:@person.Email </p>
             <p> Статус:@person.Status </p>
-            <p>@person.Requirements</p>
+            <p> Описание:@person.Requirements</p>
         </div>
     }
 }

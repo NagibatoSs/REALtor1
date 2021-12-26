@@ -1,19 +1,36 @@
 	body {
-     height: 570px;
-     background-color: #e5f7d2}
+     background-color: #e5f7d2;
+	 display:flex;
+	 flex-direction:column;
+	}
 	 
     header {
-    text-align: center;
+     text-align: center;
      width: 100%; 
      height: 80px;
+	 margin-bottom: 30px;
      }
-	 
-	 
-	 #mainHeading {
-     margin: 0px;
-     font-weight: bold;
-     font-size: 60px;
-     padding-left: 40px;}
+
+	.baseInf a {
+	text-decoration: none ;
+	float: right;
+	margin-right: 20px;
+	}
+
+	.baseInf a:hover {
+		cursor: pointer;
+	}
+
+.baseInf {
+	flex-grow: 1;
+}
+
+	.baseInf h2 {
+		margin-bottom:0;
+		margin-top:0;
+		font-size: 40px;
+		margin-left: 40px;
+	}
 	 
     .top-menu {
      width: 100%;
@@ -37,7 +54,15 @@
      cursor: pointer;}
     .top-menu ul li a:hover {
      background: #93d192;}
-	 
+
+	.contactsText img {
+	float: right;
+	margin-right: 700px;
+	margin-top: 10px;
+	width: 400px;
+	height: 500px;
+	margin-bottom:130px;
+	}
 	.contactsText h2 {
 	 margin: 0px;
      font-size: 40px;
@@ -45,14 +70,7 @@
 	}
 	.contactsText p {
 	 padding-left: 40px;
-     font-size: 20px
-	}
-	
-	#inputHeading{
-	 margin: 0px;
-     font-weight: bold;
-     font-size: 40px;
-     padding-left: 40px;
+     font-size: 20px;
 	}
 	
 	#form{
@@ -68,9 +86,85 @@
      font-weight: bold;
      font-size: 25px;
 	}
-	
-	.textByForm{
-	 font-size: 20px;	 
+
+	.div-box {
+	margin-left: 40px;
+	margin-top: 10px;
+	margin-bottom: 340px;
+	background-color: #e6faef;
+	width: 400px;
+	padding-left: 10px;
+	font-size: 25px;
+	padding-bottom: 10px;
+	}
+	.div-box input [type="submit"] {
+			height: 30px;
+			font-size: 20px;
+			border: 1px solid #000000;
+			cursor: pointer;
+			margin-bottom: 10px;
+	}
+.mainPanel {
+	margin-left: 40px;
+}
+
+.mainPanel a{
+	color: black;
+	font-size: 30px;
+}
+.panel {
+	margin-left: 40px;
+	margin-top: 10px;
+	background-color: #e6faef;
+	width: 900px;
+	padding-left: 10px;
+	font-size: 25px;
+	padding-bottom: 10px;
+}
+	.panel a {
+	color: black;
+	}
+
+.box {
+	margin-left: 40px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding-left: 10px;
+	width: 300px;
+	font-size: 25px;
+	padding-bottom: 10px;
+}
+	.contactsByAdmin {
+	margin-left: 40px;
+	margin-top: 10px;
+	background-color: #e6faef;
+	width: 600px;
+	padding-left: 10px;
+	font-size: 25px;
+	padding-bottom: 10px;
+	height: 400px;
+	}
+
+	.list {
+	margin-left: 40px;
+	margin-top: 10px;
+	background-color: #e6faef;
+	width: 800px;
+	padding-left: 10px;
+	font-size: 25px;
+	padding-bottom: 10px;
+	height: 400px;
+	}
+	.list img {
+	width: 350px;
+	height: 300px;
+	float: right;
+	margin-left: 50px;
+	margin-top: 40px;;
+	}
+
+	.textByForm {
+	font-size: 20px;
 	}
 	
 	.paramsText{
@@ -96,14 +190,13 @@
 	border: 2px solid #000000;
 	}
 	.open-popup {
-	position: absolute;
-    top: 110px;
-    left: 45px;
+	position: relative;
 	height: 35px;
 	width: 200px;
 	font-size: 25px;
 	text-align: center;
     cursor: pointer;
+	margin-left: 40px;
 	}
 	.popup form {
 	font-size: 20px;
@@ -188,7 +281,7 @@
 		height: 600px;
 		padding-left: 8px;
 		font-size: 25px;
-		padding-bottom: 5px;
+		padding-bottom: 10px;
 	}
 	.data form input[type="submit"]{
     height: 25px;
@@ -196,17 +289,16 @@
 	border: 1px solid #000000;
 	cursor: pointer;
 	}
-	
-	.ad-footer footer{
-		position: relative;
-		float: left;
+
+	.complete {
+	text-align:center;
+	margin-bottom: 400px;
+	font-size: 40px;
 	}
-	
+
     footer {
-	position: absolute;
+	position: relative;
 	height: 20px;
-	bottom: 0;
-    left: 0;
 	margin-top: 6px;
     text-align: center;
     color: black;

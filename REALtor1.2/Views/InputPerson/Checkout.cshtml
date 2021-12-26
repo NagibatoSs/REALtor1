@@ -1,20 +1,12 @@
 ﻿@model Person
     <div class="data">
-        <h3 id="inputHeading">Ввести данные</h3>
+        <h3>Ввести данные</h3>
         <form action="/InputPerson/Checkout" method="post">
-            <p>
             <p class="textByForm">ФИО:</p> <input asp-for="Fio" type="text" size="80" required autofocus>
-            </p>
-            <p>
             <p class="textByForm">Номер телефона:</p> <input asp-for="NumberOfPhone" type="tel" size="80" required>
-            </p>
-            <p>
             <p class="textByForm">Электронная почта:</p> <input asp-for="Email" type="email" size="80" required>
-            </p>
-            <p>
             <p class="textByForm">Требуемые услуги:</p>
-            <p><textarea asp-for="Requirements" rows="10" cols="60" required></textarea></p>
-            </p>
+            <p><textarea asp-for="Requirements" rows="10" cols="50" required></textarea></p>
             <input type="submit" value="Отправить">
         </form>
     </div>
