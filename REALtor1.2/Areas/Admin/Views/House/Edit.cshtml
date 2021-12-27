@@ -14,33 +14,68 @@
 
             <div asp-validation-summary="All"></div>
             <div class="box">
-                <label asp-for="Name">Имя дома:</label>
-                <input asp-for="Name" size="60"/>
-                <span asp-validation-for="Name"></span>
+                <label asp-for="Name">Заголовок:</label>
+                <input asp-for="Name" size="60" />
             </div>
             <div class="box">
-                <label asp-for="Img">Фото дома:</label>
-                <input asp-for="Img" size="60"/>
-                <span asp-validation-for="Img"></span>
+                <label asp-for="Address">Адрес:</label>
+                <input asp-for="Address" size="60" />
+            </div>
+            <div class="box">
+                <label asp-for="CountOfRooms">Количество комнат</label>
+                <input asp-for="CountOfRooms" size="20" />
             </div>
             <div class="box">
                 <label asp-for="Price">Цена:</label>
-                <input asp-for="Price" size="70"/>
-                <span asp-validation-for="Price"></span>
+                <input asp-for="Price" size="70" />
             </div>
             <div class="box">
                 <label asp-for="Square">Площадь:</label>
-                <input asp-for="Square" size="60"/>
-                <span asp-validation-for="Square"></span>
+                <input asp-for="Square" size="60" />
             </div>
             <div class="box">
                 <label asp-for="Area">Район:</label>
-                <input asp-for="Area" size="60"/>
-                <span asp-validation-for="Area"></span>
+                <input asp-for="Area" size="60" />
             </div>
             <div class="box">
+                <label asp-for="coldWater">Холодная вода</label>
+                <input asp-for="coldWater" value="true" type="checkbox" />
+                <label asp-for="hotWater">Горячая вода</label>
+                <input asp-for="hotWater" value="true" type="checkbox" />
+                <label asp-for="electricity">Электричество</label>
+                <input asp-for="electricity" value="true" type="checkbox" />
+                <label asp-for="gas">Газ</label>
+                <input asp-for="gas" value="true" type="checkbox" />
+            </div>
+            <div class="box">
+                <label asp-for="StatusOfHome">Частный дом</label>
+                <input asp-for="StatusOfHome" value="Частный дом" type="radio" />
+
+                <label asp-for="StatusOfHome">Новостройка</label>
+                <input asp-for="StatusOfHome" value="Новостройка" type="radio" />
+
+                <label asp-for="StatusOfHome">Старый многоэтажный дом</label>
+                <input asp-for="StatusOfHome" value="Старый многоэтажный дом" type="radio" />
+
+                <label asp-for="StatusOfHome">Гараж</label>
+                <input asp-for="StatusOfHome" value="Гараж" type="radio" />
+
+                <label asp-for="StatusOfHome">Старый ветхий дом</label>
+                <input asp-for="StatusOfHome" value="Старый ветхий дом" type="radio" />
+            </div>
+            <div class="box">
+                <label asp-for="Seller">Район:</label>
+                <input asp-for="Seller.Fio" size="60" />
+            </div>
+            <div class="box">
+                <label asp-for="Img">Фото дома:</label>
+                <input asp-for="Img" size="60" />
+                <span asp-validation-for="Img"></span>
+            </div>
+
+            <div class="box">
                 <label asp-for="Despription">Описание:</label>
-                <input asp-for="Despription" size="100"/>
+                <input asp-for="Despription" size="100" />
                 <span asp-validation-for="Despription"></span>
             </div>
             <input type="submit" value="Сохранить" />

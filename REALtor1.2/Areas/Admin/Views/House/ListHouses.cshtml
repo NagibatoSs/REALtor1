@@ -1,12 +1,25 @@
 ﻿@{
+    <div class="open-popup">
+        <a href="/Admin/House/Parametrs" id="open-popup">Параметры</a>
+    </div>
     foreach (var house in Model.getAllHouses)
     {
-    <div class="list">
-        <img src="@house.Img" alt="@house.Name">
-        <h3>@house.Name</h3>
-        <p>@house.Price рублей </p>
-        <p> Площадь:@house.Square Район:@house.Area Адрес:@house.Address</p>
-        <p>@house.Despription</p>
-    </div>
+<div class="list">
+    <img src="@house.Img" alt="@house.Name">
+    <h3>@house.Name</h3>
+    <p>@house.Price рублей </p>
+    <p> Площадь:@house.Square </p>
+    <p>Количество комнат: @house.CountOfRooms</p>
+    <p>@house.StatusOfHome</p>
+    <p> Район:@house.Area </p>
+    <p> Адрес:@house.Address</p>
+    <p> Условия жизни: </p>
+    <p> @{ if (house.coldWater == true)} Холодная вода </p>
+    <p> @{ if (house.hotWater == true)} Горячая вода </p>
+    <p> @{ if (house.electricity == true)} Электричество </p>
+    <p> @{ if (house.gas == true)} Газ </p>
+    <p>@house.Despription</p>
+
+</div>
     }
 }

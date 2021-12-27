@@ -2,6 +2,7 @@
     <div class="data">
         <h3>Ввести данные</h3>
         <form action="/InputPerson/Checkout" method="post">
+            <input type="hidden" asp-for="Status" value="покупатель" />
             <p class="textByForm">ФИО:</p> <input asp-for="Fio" type="text" size="80" required autofocus>
             <p class="textByForm">Номер телефона:</p> <input asp-for="NumberOfPhone" type="tel" size="80" required>
             <p class="textByForm">Электронная почта:</p> <input asp-for="Email" type="email" size="80" required>

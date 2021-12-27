@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using REALtor1._2.Data;
 
 namespace REALtor1._2.Migrations
 {
     [DbContext(typeof(DbContent))]
-    partial class DbContentModelSnapshot : ModelSnapshot
+    [Migration("20211227143752_Initial5")]
+    partial class Initial5
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -49,7 +51,7 @@ namespace REALtor1._2.Migrations
                         new
                         {
                             Id = "f9e70088-f003-4dd2-ae7f-b6fd6b8239d5",
-                            ConcurrencyStamp = "afb230d4-bed5-42ce-acec-5c25dd0b85a7",
+                            ConcurrencyStamp = "3456368e-9453-49c6-b1c6-a39f5c766c79",
                             Name = "admin",
                             NormalizedName = "ADMIN"
                         });
@@ -148,13 +150,13 @@ namespace REALtor1._2.Migrations
                         {
                             Id = "586347a0-0208-44e2-b3cc-86138a23a89e",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "cf4cbcf5-b149-434a-81d6-5ce0b9554df6",
+                            ConcurrencyStamp = "9252065c-e841-40fc-8994-3e125e5d4611",
                             Email = "89090665177d@gmail.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "89090665177D@GMAIL.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAEKteVr940bQDonemIKObZmHlysms1j7fluYKi9mf6jJw+FD9dUP8vMwSL4Z9qKfx+w==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEFsT2GBvkXfQc9pz8ajLHyki0fMET7lRAvWIsxHnEVbpkwY2viRFxVK6UH7oeQclAA==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,

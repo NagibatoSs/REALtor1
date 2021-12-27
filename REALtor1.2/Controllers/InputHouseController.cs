@@ -20,11 +20,11 @@ namespace REALtor1._2.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Checkout(House person)
+        public IActionResult Checkout(House house)
         {
             if (ModelState.IsValid)
             {
-                allHouses.createHouse(person);
+                allHouses.createHouse(house);
                 return RedirectToAction("Complete");
             }
             return View();

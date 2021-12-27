@@ -9,5 +9,6 @@ namespace REALtor1._2.ViewModels
     public class HousesListViewModel
     {
         public IEnumerable<House> getAllHouses { get; set; }
+        public House houseFiltr = new House();
     }
 }

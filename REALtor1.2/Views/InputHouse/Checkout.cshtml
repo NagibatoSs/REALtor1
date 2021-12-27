@@ -4,6 +4,8 @@
     <form action="/InputHouse/Checkout" method="post">
         <h2 id="placeHeading">Разместить объявление</h2>
         <input type="hidden" asp-for="Available" value="false" />
+        <input type="hidden" asp-for="Seller.Status" value="владелец" />
+        <p class="textByForm">Заголовок <input asp-for="Name" type="text" size="40" required></p>
         <p class="paramsText">Площадь недвижимости:</p>
         <p class="paramsText"><input asp-for="Square" type="number" required autofocus>кв.м.</p>
         <p class="paramsText">Количество комнат:</p>
@@ -19,13 +21,14 @@
         <p class="paramsText">Условия жизни:</p>
         <p class="paramsText">Холодная вода<input asp-for="coldWater" value="true" type="checkbox">Горячая вода<input asp-for="hotWater" value="true" type="checkbox">Электричество<input asp-for="electricity" value="true" type="checkbox"></p>
         <p class="paramsText">Газ<input asp-for="gas" value="true" type="checkbox"></p>
-        <p class="textByForm">ФИО: <input asp-for="Seller.Fio" type="text" size="40" required></p>
         <p class="textByForm">Адрес недвижимости: <input asp-for="Address" type="text" size="60" required></p>
+        <p class="textByForm">Фото: <input asp-for="Img" type="text" required></p>
         <p class="textByForm">Описание:</p>
         <p><textarea rows="10" cols="60" required></textarea></p>
+        <p class="textByForm">ФИО: <input asp-for="Seller.Fio" type="text" size="40" required></p>
         <p class="textByForm">Номер телефона: <input asp-for="Seller.NumberOfPhone" type="tel" size="40" required></p>
         <p class="textByForm">Электронная почта: <input asp-for="Seller.Email" type="email" size="40" required></p>
-        <p class="textByForm">Фото: <input asp-for="Img" type="text" required></p>
+
         <input type="submit" value="Отправить">
     </form>
 </div>

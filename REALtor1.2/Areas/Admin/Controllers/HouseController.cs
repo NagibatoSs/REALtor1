@@ -36,6 +36,32 @@ namespace REALtor1._2.Areas.Admin.Controllers
             ViewBag.Title = "Главная страница";
             return View();
         }
+
+        [HttpPost]
+        public ViewResult ListHousesFiltr(House filtrHouse)
+        {
+            HousesListViewModel houses = new HousesListViewModel();
+            houses.getAllHouses = dataManager.Houses.Houses
+                .Where(n => n.Available == true)
+                .Where(n => n.CountOfRooms == filtrHouse.CountOfRooms && n.Square >= filtrHouse.Square && n.Price >= filtrHouse.Price)
+                .Where(n => n.coldWater == true && filtrHouse.coldWater == true)
+                .Where(n => n.hotWater == true && filtrHouse.hotWater == true)
+                .Where(n => n.electricity == true && filtrHouse.electricity == true)
+                .Where(n => n.gas == true && filtrHouse.gas == true)
+                .Where(n => n.Area == filtrHouse.Area && n.Area != null)
+                .Where(n => n.StatusOfHome == filtrHouse.StatusOfHome && n.StatusOfHome != null)
+                .Select(n => n);
+            return View(houses);
+        }
+        public ViewResult ListHousesFiltr()
+        {
+            return View();
+        }
+        public IActionResult Parametrs()
+        {
+            return View();
+        }
+
         public IActionResult Edit(int id)
         {
             var entity = id == default ? new House() : dataManager.Houses.getObjectHouse(id);

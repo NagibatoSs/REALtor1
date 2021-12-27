@@ -51,7 +51,7 @@ namespace REALtor1._2.Controllers
         public async Task<IActionResult> Logout()
         {
             await signInManager.SignOutAsync();
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Houses", "MainView");
         }
     }
 }
