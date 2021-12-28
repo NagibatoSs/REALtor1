@@ -10,43 +10,50 @@ using REALtor1._2.ViewModels;
 
 namespace REALtor1._2.Controllers
 {
+    //[Route("api/[controller]")]
+    //[ApiController]
     public class HousesController:Controller
     {
-        private readonly IAllHouses _allHouses;
-        private readonly IAllPerson _allPerson;
-        public HousesController(IAllHouses iallHouses,IAllPerson iallPerson)
+        private readonly DataManager dataManager;
+        public HousesController(DataManager dataManager)
         {
-            _allHouses = iallHouses;
-            _allPerson = iallPerson;
+            this.dataManager = dataManager;
         }
         public ViewResult ListHouses()
         {
             ViewBag.Title = "Поиск";
             HousesListViewModel houses = new HousesListViewModel();
-            houses.getAllHouses = _allHouses.Houses
+            houses.getAllHouses = dataManager.Houses.Houses
                 .Where(n=>n.Available==true);
             return View(houses);
         }
-        [HttpPost]
-        public ViewResult ListHousesFiltr(House filtrHouse)
+        //[HttpPost("FiltrList")]
+        public IActionResult ListHousesFiltr(House filtrHouse)
         {
-            HousesListViewModel houses = new HousesListViewModel();
-            houses.getAllHouses = _allHouses.Houses
-                .Where(n => n.Available==true)
-                .Where(n => n.CountOfRooms == filtrHouse.CountOfRooms && n.Square >= filtrHouse.Square && n.Price >= filtrHouse.Price)
-                .Where(n => n.coldWater==true && filtrHouse.coldWater==true)
-                .Where(n => n.hotWater==true && filtrHouse.hotWater==true)
-                .Where(n => n.electricity==true && filtrHouse.electricity==true)
-                .Where(n => n.gas==true && filtrHouse.gas==true)
-                .Where(n => n.Area==filtrHouse.Area && n.Area!=null)
-                .Where(n => n.StatusOfHome==filtrHouse.StatusOfHome && n.StatusOfHome!=null)
-                .Select(n => n);
-            return View(houses);
+            if (filtrHouse != null)
+            {
+                HousesListViewModel houses = new HousesListViewModel();
+                houses.getAllHouses = dataManager.Houses.Houses
+                    .Where(n => n.Available == true)
+                    .Where(n => n.CountOfRooms == filtrHouse.CountOfRooms)
+                    .Where(n => n.Square >= filtrHouse.Square)
+                    .Where(n => n.Price >= filtrHouse.Price)
+                    .Where(n => n.coldWater == true && filtrHouse.coldWater == true)
+                    .Where(n => n.hotWater == true && filtrHouse.hotWater == true)
+                    .Where(n => n.electricity == true && filtrHouse.electricity == true)
+                    .Where(n => n.gas == true && filtrHouse.gas == true)
+                    .Where(n => n.Area == filtrHouse.Area && n.Area != null)
+                    .Where(n => n.StatusOfHome == filtrHouse.StatusOfHome && n.StatusOfHome != null)
+                    .Select(n => n);
+                return View(houses);
+            }
+            else return NotFound("House filtr equals null");
         }
         public ViewResult ListHousesFiltr()
         {
             return View();
         }
+       // [HttpGet("MainView")]
         public ViewResult MainView()
         {
             ViewBag.Title = "Главная страница";

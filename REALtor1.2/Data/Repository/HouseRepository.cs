@@ -17,7 +17,6 @@ namespace REALtor1._2.Data.Repository
         }
         public IEnumerable<House> Houses => dbContent.House.Include(p => p.Seller);
 
-        public IEnumerable<House> GetAvailableHouses => dbContent.House.Where(h => h.Available).Include(p => p.Seller);
         public void createHouse(House house)
         {
             dbContent.House.Add(house);
@@ -43,10 +42,6 @@ namespace REALtor1._2.Data.Repository
         public IQueryable<House> GetHouse()
         {
             return dbContent.House;
-        }
-        public House GetByCodeWord(string codeWord)
-        {
-            return dbContent.House.FirstOrDefault(x => x.CodeWord == codeWord);
         }
     }
 }

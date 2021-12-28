@@ -16,26 +16,32 @@
             <div class="box">
                 <label asp-for="Name">Заголовок:</label>
                 <input asp-for="Name" size="60" />
+                <span asp-validation-for="Name"></span>
             </div>
             <div class="box">
                 <label asp-for="Address">Адрес:</label>
                 <input asp-for="Address" size="60" />
+                <span asp-validation-for="Address"></span>
             </div>
             <div class="box">
                 <label asp-for="CountOfRooms">Количество комнат</label>
                 <input asp-for="CountOfRooms" size="20" />
+                <span asp-validation-for="CountOfRooms"></span>
             </div>
             <div class="box">
                 <label asp-for="Price">Цена:</label>
                 <input asp-for="Price" size="70" />
+                <span asp-validation-for="Price"></span>
             </div>
             <div class="box">
                 <label asp-for="Square">Площадь:</label>
                 <input asp-for="Square" size="60" />
+                <span asp-validation-for="Square"></span>
             </div>
             <div class="box">
                 <label asp-for="Area">Район:</label>
                 <input asp-for="Area" size="60" />
+                <span asp-validation-for="Area"></span>
             </div>
             <div class="box">
                 <label asp-for="coldWater">Холодная вода</label>
@@ -64,7 +70,7 @@
                 <input asp-for="StatusOfHome" value="Старый ветхий дом" type="radio" />
             </div>
             <div class="box">
-                <label asp-for="Seller">Район:</label>
+                <label asp-for="Seller">ФИО владельца</label>
                 <input asp-for="Seller.Fio" size="60" />
             </div>
             <div class="box">

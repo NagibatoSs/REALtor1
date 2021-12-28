@@ -43,7 +43,9 @@ namespace REALtor1._2.Areas.Admin.Controllers
             HousesListViewModel houses = new HousesListViewModel();
             houses.getAllHouses = dataManager.Houses.Houses
                 .Where(n => n.Available == true)
-                .Where(n => n.CountOfRooms == filtrHouse.CountOfRooms && n.Square >= filtrHouse.Square && n.Price >= filtrHouse.Price)
+                .Where(n => n.CountOfRooms == filtrHouse.CountOfRooms)
+                .Where(n => n.Square >= filtrHouse.Square)
+                .Where(n => n.Price >= filtrHouse.Price)
                 .Where(n => n.coldWater == true && filtrHouse.coldWater == true)
                 .Where(n => n.hotWater == true && filtrHouse.hotWater == true)
                 .Where(n => n.electricity == true && filtrHouse.electricity == true)

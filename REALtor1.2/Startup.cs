@@ -24,18 +24,17 @@ namespace REALtor1._2
         {
             _confString = new ConfigurationBuilder().SetBasePath(host.ContentRootPath).AddJsonFile("dbsettings.json").Build();
         }
-        //public Startup(IConfiguration configuration)
-        //{
-        //    Configuration = configuration;
-        //}
-
         public IConfiguration Configuration { get; }
+        //Подключение сервисов
         public void ConfigureServices(IServiceCollection services)
         {
+            //подключаем базу данных
             services.AddDbContext<DbContent>(options => options.UseSqlServer(_confString.GetConnectionString("DefaultConnection")));
+            //связуем интерфейсы и классы, где они реализованны
             services.AddTransient<IAllHouses, HouseRepository>();
             services.AddTransient<IAllPerson, PersonRepository>();
             services.AddTransient<DataManager>();
+            //подключаем контроллеры
             services.AddMvc();
             services.AddMvc(option => option.EnableEndpointRouting = false);
             services.AddIdentity<IdentityUser, IdentityRole>(opt =>
@@ -67,10 +66,7 @@ namespace REALtor1._2
             {
                 x.Conventions.Add(new AdminAreaAuthorization("Admin", "AdminArea"));
             }).SetCompatibilityVersion(CompatibilityVersion.Version_3_0).AddSessionStateTempDataProvider();
-
         }
-
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseDeveloperExceptionPage();
@@ -79,7 +75,6 @@ namespace REALtor1._2
             app.UseMvcWithDefaultRoute();
             //подключаем систему маршрутизации
             app.UseRouting();
-
             app.UseCookiePolicy();
             app.UseAuthentication();
             app.UseAuthorization();
@@ -88,14 +83,11 @@ namespace REALtor1._2
                 endpoints.MapControllerRoute("admin", "{area:exists}/{controller=House}/{action=MainView}/{id?}");
                 endpoints.MapControllerRoute("default", "{controller=Houses}/{action=MainView}/{id?}");
             });
-
             using (var scope = app.ApplicationServices.CreateScope())
             {
                 DbContent content = scope.ServiceProvider.GetRequiredService<DbContent>();
                 DbObjects.Initial(content);
             }
-
-
         }
     }
 }
